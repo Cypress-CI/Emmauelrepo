@@ -46,8 +46,7 @@ describe('example to-do app', () => {
     // https://on.cypress.io/selecting-elements
     cy.get('[data-test=new-todo]').type(`${newItem}{enter}`)
 
-    // Now that we've typed our new item, let's check that it actually was added to the list.
-    // Since it's the newest item, it should exist as the last element in the list.
+    
     // In addition, with the two default items, we should have a total of 3 elements in the list.
     // Since assertions yield the element that was asserted on,
     // we can chain both of these assertions together into a single statement.
