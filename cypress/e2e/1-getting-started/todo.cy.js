@@ -26,8 +26,7 @@ describe('example to-do app', () => {
     // which are the two default items.
     cy.get('.todo-list li').should('have.length', 2)
 
-    // We can go even further and check that the default todos each contain
-    // the correct text. We use the `first` and `last` functions
+//Falilat is here
     // to get just the first and last matched elements individually,
     // and then perform an assertion with `should`.
     cy.get('.todo-list li').first().should('have.text', 'Pay electric bill')
@@ -45,8 +44,6 @@ describe('example to-do app', () => {
     // element in accordance with best practices:
     // https://on.cypress.io/selecting-elements
     cy.get('[data-test=new-todo]').type(`${newItem}{enter}`)
-
-    
     // In addition, with the two default items, we should have a total of 3 elements in the list.
     // Since assertions yield the element that was asserted on,
     // we can chain both of these assertions together into a single statement.
